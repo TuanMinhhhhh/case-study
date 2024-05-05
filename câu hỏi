@@ -1,0 +1,73 @@
+Câu 1 Để in ra một chuỗi trong Python, bạn sử dụng lệnh nào?
+A: IN()
+B: print()
+C: if()
+D: else()
+Đáp án: print()
+câu 2 Câu hỏi: Trong Python, phép tính nào được sử dụng để tính toán phần dư của hai số?
+A. //
+B. **
+C. %
+D. /
+Đáp án: C. %
+câu 3 Câu hỏi: Trong Python, lệnh nào được sử dụng để nhận input từ người dùng?
+A. scan()
+B. get_input()
+C. input()
+D. read()
+Đáp án: C. input()
+câu 4: Câu hỏi: Kết quả của biểu thức sau là gì?
+z = (10 + 3) * 2 / 5
+print(z)
+A. 2.6
+B. 5.0
+C. 26
+D. 9.0
+Đáp án: A. 2.6
+câu 5: kết quả cho ra là gì?
+x = 10
+if x > 5:
+   print("x lớn hơn 5")
+else:
+   print("x nhỏ hơn hoặc bằng 5")
+A: x lớn hơn 5
+B: x nhỏ hơn 5
+C: x bằng 5
+D: chương trình bị lỗi
+Đáp án: A
+Câu 6:
+trong cấu trúc if else điều kiện nào được kiểm tra đầu tiên?
+A: Điều kiện trong if
+B: Điều kiện trong else
+C: cả hai điều kiện được kiểm tra cùng lúc
+D: điều kiện trong if else được kiểm tra theo thứ tự từ trên xuống dưới 
+Đáp án: điều kiện trong if
+Câu 7: kết quả cho ra là gì:?
+numbers = [1, 2, 3, 4, 5]
+total = 0
+for num in numbers:
+    total += num
+print(total)
+A. 10
+B. 20
+C. 15
+D. 40
+đáp án C
+câu 8:trong python lệnh nào để kết thúc một vòng lặp sớm?
+A: continue
+B: stop
+C: input
+D: break
+đáp án: D
+câu 9: khi nào lệnh else trong vòng lặp được thực thi?
+A: sau mỗi vòng lặp
+B: khi vòng lặp gặp lệnh "break"
+C: chỉ khi vòng lặp hoàn thành mà không gặp phải lệnh "break"
+D:chỉ khi vòng lặp hoàn thành mà không gặp phải lệnh "continue"
+câu 10: g = 15 / 4 + 2
+print(g)
+A: 5.75
+B: 21
+C: 4.75
+D: 1
+Đáp án: A
