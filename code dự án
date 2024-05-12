@@ -1,0 +1,128 @@
+questions = [
+    {
+        "question": "Để in ra một chuỗi trong Python, bạn sử dụng lệnh nào?",
+        "options": {
+            "A": "IN()",
+            "B": "print()",
+            "C": "if()",
+            "D": "else()"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Trong Python, phép tính nào được sử dụng để tính toán phần dư của hai số?",
+        "options": {
+            "A": "//",
+            "B": "**",
+            "C": "%",
+            "D": "/"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Trong Python, lệnh nào được sử dụng để nhận input từ người dùng?",
+        "options": {
+            "A": "scan()",
+            "B": "get_input()",
+            "C": "input()",
+            "D": "read()"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Kết quả của biểu thức sau là gì?\nz = (10 + 3) * 2 / 5\nprint(z)",
+        "options": {
+            "A": "2.6",
+            "B": "5.0",
+            "C": "26",
+            "D": "9.0"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Kết quả cho ra là gì?\nx = 10\nif x > 5:\n   print('x lớn hơn 5')\nelse:\n   print('x nhỏ hơn hoặc bằng 5')",
+        "options": {
+            "A": "x lớn hơn 5",
+            "B": "x nhỏ hơn 5",
+            "C": "x bằng 5",
+            "D": "chương trình bị lỗi"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Trong cấu trúc if else, điều kiện nào được kiểm tra đầu tiên?",
+        "options": {
+            "A": "Điều kiện trong if",
+            "B": "Điều kiện trong else",
+            "C": "Cả hai điều kiện được kiểm tra cùng lúc",
+            "D": "Điều kiện trong if else được kiểm tra theo thứ tự từ trên xuống dưới"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "Kết quả cho ra là gì?\nnumbers = [1, 2, 3, 4, 5]\ntotal = 0\nfor num in numbers:\n    total += num\nprint(total)",
+        "options": {
+            "A": "10",
+            "B": "20",
+            "C": "15",
+            "D": "40"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Trong Python, lệnh nào để kết thúc một vòng lặp sớm?",
+        "options": {
+            "A": "continue",
+            "B": "stop",
+            "C": "input",
+            "D": "break"
+        },
+        "answer": "D"
+    },
+    {
+        "question": "Khi nào lệnh else trong vòng lặp được thực thi?",
+        "options": {
+            "A": "Sau mỗi vòng lặp",
+            "B": "Khi vòng lặp gặp lệnh 'break'",
+            "C": "Chỉ khi vòng lặp hoàn thành mà không gặp phải lệnh 'break'",
+            "D": "Chỉ khi vòng lặp hoàn thành mà không gặp phải lệnh 'continue'"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "Kết quả cho ra là gì?\ng = 15 / 4 + 2\nprint(g)",
+        "options": {
+            "A": "5.75",
+            "B": "21",
+            "C": "4.75",
+            "D": "1"
+        },
+        "answer": "A"
+    }
+]
+
+def ask_question(question):
+    print(question["question"])
+    for option, value in question["options"].items():
+        print(f"{option}: {value}")
+    user_answer = input("Chọn đáp án của bạn (A/B/C/D): ").upper()
+    if user_answer == question["answer"]:
+        print("Chính xác!\n")
+        return True
+    else:
+        print("Sai rồi.\n")
+        return False
+
+def game():
+    print("Chào mừng bạn đến với game 'Ai là triệu phú'!")
+    money_earned = 0
+    for question in questions:
+        if ask_question(question):
+            money_earned += 100000
+        else:
+            print("Bạn đã dừng cuộc chơi với số tiền là:", money_earned)
+            break
+    else:
+        print("Xin chúc mừng! Bạn đã trở thành triệu phú với số tiền là:", money_earned)
+
+game()
